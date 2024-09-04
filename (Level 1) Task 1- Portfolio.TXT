@@ -1,0 +1,162 @@
+#HTML_CODE
+**************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Singh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Anurag Singh</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Anurag Singh, a passionate developer with skills in creating landing pages and functional applications.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project 1: Landing Page</h3>
+            <p>Developed a landing page to showcase my projects and skills.</p>
+            <img src="landing.jpg" alt="Landing Page Project">
+        </div>
+
+        <div class="project centered">
+            <h3>Project 2: Basic Calculator</h3>
+            <p>A basic calculator to perform mathematical functions.</p>
+            <img src="calc.jpg.jpg" alt="Calculator Project">
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" class="resume-link" target="_blank">Download My Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anurag Singh. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+******************
+
+#CSS_CODE
+***************************
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 50px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.centered {
+    text-align: center;
+}
+
+.resume-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2575fc;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #6a11cb;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+*************************************
